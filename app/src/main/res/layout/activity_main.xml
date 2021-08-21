@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/header_app"
+                    android:layout_marginTop="36dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textAlignment="center"
+                        android:text="Android\nSpecial Characters"
+                        android:layout_gravity="center"
+                        android:theme="@style/headerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:theme="@style/lineVertical"
+                        android:layout_width="120dp"
+                        android:layout_height="0.5dp"/>
+                    <TextView
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="center"
+                        android:text="Kali ini, kita akan bahas tentang masalah\nbagaimana IDE Android Studio menghandle\n sebuah karakter khusus untuk para developer"
+                        android:theme="@style/bodyText"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/body_app"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:theme="@style/backgroundTable"
+                        android:layout_margin="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:textSize="12dp"
+                                android:text="CHARACTERS"
+                                android:theme="@style/textFirstRow"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:text="IMPLEMENTATION"
+                                android:theme="@style/textFirstRow"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="\@"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="\@gendut.idaman"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="\?"
+                                android:padding="8dp"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="What is Coding\?"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="&lt;"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="10 &lt; 12"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="&quot;your text&quot;"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="&quot;saya paham&quot;, ujarnya"
+                                android:theme="@style/textDataRow"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginHorizontal="1dp"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/footer_app"
+                    android:orientation="vertical"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Dikembangkan oleh\n\@gendut.idaman"
+                        android:theme="@style/bodyText"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

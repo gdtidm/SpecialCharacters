@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light">#142E5D</color>
+    <color name="primary_light_variants">#000000</color>
+    <color name="on_primary_light">#000000</color>
+
+    //theme dark
+    <color name="primary_dark">#4DFF88</color>
+    <color name="primary_dark_variants">#000000</color>
+    <color name="on_primary_dark">#000000</color>
+
+    //colors random
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
